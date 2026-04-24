@@ -1,0 +1,14 @@
+cd ~/training.demo
+git init
+touch script.js
+git status
+git add script.js
+git commit -m "Add file script.js to the project"
+git log --oneline 
+git checkout -b feature-logic
+touch style.css
+git add .
+git commit -m "Add style to the new branch"
+git checkout main
+git merge feature-logic
+
